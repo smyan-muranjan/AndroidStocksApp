@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.androidStocksApp"
+    namespace = "com.example.androidstocksapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.androidStocksApp"
+        applicationId = "com.example.androidstocksapp"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -52,7 +52,10 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.kotlinx.serialization.json)
-
+    // Material 3 (recommended)
+    implementation (libs.material3)
+    // For PullRefresh feature, from Material 1.3.0 or later
+    implementation (libs.androidx.material)
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
